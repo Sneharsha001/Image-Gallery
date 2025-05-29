@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Albums</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
+
+    <h1>Select an Album</h1>
+    <div class="album-selection">
+        <button onclick="loadAlbum('nature')">Nature</button>
+        <button onclick="loadAlbum('travel')">Travel</button>
+        <button onclick="loadAlbum('food')">Food</button>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <p id="modalCaption"></p>
+        <button id="prevBtn">❮ Prev</button>
+        <button id="nextBtn">Next ❯</button>
+    </div>
+
+</body>
+</html>
